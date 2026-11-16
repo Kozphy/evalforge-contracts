@@ -1,0 +1,19 @@
+.gitignore
+  s_1a0486d26c7e7e::t_6d37a2f2c7baaf 1-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "75f15e778f90fe972dd6628dd071d4afebadda3e",
+  "prompts": {},
+  "sessions": {
+    "s_1a0486d26c7e7e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "5594125b-55d1-44f9-ac04-0e25f3d0ef33",
+        "model": "default"
+      },
+      "human_author": "Zixsa <dbdf0147@gmail.com>"
+    }
+  }
+}
