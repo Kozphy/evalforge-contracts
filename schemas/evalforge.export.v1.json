@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Kozphy/evalforge-contracts/schemas/evalforge.export.v1.json",
+  "title": "EvalForge export envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "producer_revision", "run_id", "results"],
+  "properties": {
+    "schema_version": {
+      "const": "evalforge.export.v1"
+    },
+    "producer_revision": {
+      "type": "string",
+      "minLength": 7,
+      "maxLength": 64,
+      "description": "Git SHA or build id of the producing revision (metadata only)."
+    },
+    "run_id": {
+      "type": ["string", "integer"]
+    },
+    "project_id": {
+      "type": ["string", "integer", "null"]
+    },
+    "include_content": {
+      "type": "boolean",
+      "default": false,
+      "description": "When false, prompt and response must be null or omitted."
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "result_id": { "type": ["string", "integer", "null"] },
+          "case_id": { "type": ["string", "integer", "null"] },
+          "external_case_id": { "type": ["string", "null"] },
+          "case_name": { "type": ["string", "null"] },
+          "expected_label": { "type": ["string", "null"] },
+          "predicted_label": { "type": ["string", "null"] },
+          "correct": { "type": ["boolean", "null"] },
+          "confidence": { "type": ["number", "null"] },
+          "needs_human_review": { "type": ["boolean", "null"] },
+          "review_status": { "type": ["string", "null"] },
+          "control_action": { "type": ["string", "null"] },
+          "release_allowed": { "type": ["boolean", "null"] },
+          "groundedness": { "type": ["number", "null"] },
+          "citation_coverage": { "type": ["number", "null"] },
+          "retrieval_max_score": { "type": ["number", "null"] },
+          "grader_provider": { "type": ["string", "null"] },
+          "model": { "type": ["string", "null"] },
+          "prompt_version": { "type": ["string", "null"] },
+          "evaluated_at": { "type": ["string", "null"] },
+          "prompt": { "type": ["string", "null"] },
+          "response": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

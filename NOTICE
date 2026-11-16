@@ -1,0 +1,9 @@
+EvalForge Contracts
+Copyright 2026 Kozphy
+
+This product is licensed under the Apache License, Version 2.0.
+
+This package contains provider-neutral evaluation *interfaces* and schemas only.
+It does not include EvalForge finance graders, taxonomies, policy engines,
+datasets, or planted-error fixtures. Those remain proprietary in the private
+EvalForge core repository.

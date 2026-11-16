@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evalforge-contracts"
+version = "0.1.0"
+description = "Apache-2.0 provider-neutral EvalForge evaluation contracts and export schema"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Kozphy" }]
+keywords = ["evalforge", "evaluation", "contracts", "schema"]
+dependencies = [
+  "pydantic>=2.9.0",
+  "jsonschema>=4.23.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+evalforge_contracts = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

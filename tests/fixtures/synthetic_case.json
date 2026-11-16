@@ -1,0 +1,10 @@
+{
+  "case_id": "contracts-synth-001",
+  "task": "integration_smoke",
+  "description": "Synthetic fixture with no golden answer key — interface smoke only.",
+  "labels": ["synthetic", "contracts"],
+  "metadata": {
+    "data_label": "synthetic",
+    "contains_answer_key": false
+  }
+}
