@@ -1,0 +1,61 @@
+docs/ADR-001-evaluation-control-plane.md
+  s_1a0486d26c7e7e::t_24e37d245a5ff0 1-14
+docs/ADR-002-canonical-evaluation-contract.md
+  s_1a0486d26c7e7e::t_f64f7ef8ff3b87 1-13
+docs/ADR-003-adapter-plugin-architecture.md
+  s_1a0486d26c7e7e::t_af1af8dbd0ba8a 1-13
+docs/ADR-006-evidence-and-audit-model.md
+  s_1a0486d26c7e7e::t_6918e76b2f2027 1-13
+docs/INTEGRATIONS.md
+  s_1a0486d26c7e7e::t_efec66e78a6dc7 1-124
+tests/fixtures/synthetic_case.json
+  s_1a0486d26c7e7e::t_6c64770bd3e046 1-10
+LICENSE
+  s_1a0486d26c7e7e::t_6851be49195d45 1-192
+NOTICE
+  s_1a0486d26c7e7e::t_32aee53e5d3c76 1-9
+README.md
+  s_1a0486d26c7e7e::t_83894408d63b42 1-49
+pyproject.toml
+  s_1a0486d26c7e7e::t_f7fb4980febf58 1-29
+schemas/evalforge.export.v1.json
+  s_1a0486d26c7e7e::t_d1147a27567a57 1-64
+src/evalforge_contracts.egg-info/PKG-INFO
+  s_1a0486d26c7e7e::t_031b59614e0757 1-66
+src/evalforge_contracts.egg-info/SOURCES.txt
+  s_1a0486d26c7e7e::t_cd05d648ea73a5 1-16
+src/evalforge_contracts.egg-info/dependency_links.txt
+  s_1a0486d26c7e7e::t_cec3f8f35e0297 1
+src/evalforge_contracts.egg-info/requires.txt
+  s_1a0486d26c7e7e::t_4f2ebac6f22a00 1-5
+src/evalforge_contracts.egg-info/top_level.txt
+  s_1a0486d26c7e7e::t_ba4d67575e6e7c 1
+src/evalforge_contracts/__init__.py
+  s_1a0486d26c7e7e::t_745d2f9a593328 1-25
+src/evalforge_contracts/control_plane.py
+  s_1a0486d26c7e7e::t_d0f9ca5cc57e8c 1-213
+src/evalforge_contracts/export_v1.py
+  s_1a0486d26c7e7e::t_7c18ac4227868d 1-57
+src/evalforge_contracts/gate.py
+  s_1a0486d26c7e7e::t_96f817094e0815 1-32
+src/evalforge_contracts/response_fn.py
+  s_1a0486d26c7e7e::t_cf3a8d6c14f45d 1-23
+tests/test_contracts.py
+  s_1a0486d26c7e7e::t_7d6c24781e871c 1-103
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "664b20c9cea7e601446ff70a0f530043a6d29d16",
+  "prompts": {},
+  "sessions": {
+    "s_1a0486d26c7e7e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "5594125b-55d1-44f9-ac04-0e25f3d0ef33",
+        "model": "default"
+      },
+      "human_author": "Zixsa <dbdf0147@gmail.com>"
+    }
+  }
+}
